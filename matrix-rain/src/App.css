@@ -1,0 +1,82 @@
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+
+    /*test*/
+    background: black;
+    height: 100%;
+}
+
+/* Make canvas fixed to always cover full page */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /*100%*/
+    min-height: 100vh;
+    z-index: -1;
+    /*0*/
+    display: block;
+    pointer-events: none;
+    /* So you can still click content */
+
+    transform: translateZ(0);
+}
+
+/* Ensure your content is visible above canvas */
+.intro-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+
+h1, h6 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.pro-tips {
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+/* Optional mobile adjustments */
+@media (max-width: 768px) {
+    .intro-container {
+        width: 100vw;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    canvas {
+        width: 100vw !important;
+        min-height: 100vh !important;
+    }
+}

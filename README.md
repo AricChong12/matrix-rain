@@ -1,6 +1,5 @@
 # Rain Protocol
-
-## Design and Crafted in purpose of chilling and relaxation for developers or any working professionals who are under stres and deadline ✨🔥
+Design and Crafted in purpose of chilling and relaxation for developers or any working professionals who are under stress and deadlines ✨🔥
 
 
 ## Sample Run
